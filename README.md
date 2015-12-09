@@ -20,7 +20,7 @@ I feel it should be said that I don't have any stake in these profiling systems,
 
 **Additional factors:**
 - Handedness (conforming to real distribution)
-- Birthday and age
+- Birthday and age (weighted toward ages 18 to 65)
 - Western/Chinese Zodiac sign
 - Height and weight (based on somatotype)
 - BMI
@@ -187,3 +187,17 @@ The "why" of it is because I like simulations and randomness, and I feel that a 
 - Expand the above functions to make use of internal data that this person has available to them based on preference and experience (how hungry are you? Would you like Chinese food right now? Which Chinese restaurant would you like to go to?)
 
 - Cleanup! Simplification! Streamlining! 
+
+# All the references in the world
+- [https://en.wikipedia.org/wiki/Two-factor_models_of_personality](https://en.wikipedia.org/wiki/Two-factor_models_of_personality)
+- [https://en.wikipedia.org/wiki/Big_Five_personality_traits](https://en.wikipedia.org/wiki/Big_Five_personality_traits)
+- [http://www.brianmac.co.uk/bodytype.htm](http://www.brianmac.co.uk/bodytype.htm)
+- [http://www.burnthefatinnercircle.com/members/images/596.jpg](http://www.burnthefatinnercircle.com/members/images/596.jpg)
+- [http://www.mysomatotype.com/body-type/?page_id=281](http://www.mysomatotype.com/body-type/?page_id=281)
+- [http://nuclear.ucdavis.edu/~rpicha/personal/astrology/zodiac1.png](http://nuclear.ucdavis.edu/~rpicha/personal/astrology/zodiac1.png)
+- [http://www.typologycentral.com/forums/mbti-tm-and-jungian-cognitive-functions/42045-ocean-personality-matrix-combining-mbti-kiersey-temperament.html](http://www.typologycentral.com/forums/mbti-tm-and-jungian-cognitive-functions/42045-ocean-personality-matrix-combining-mbti-kiersey-temperament.html)
+- [https://en.wikipedia.org/wiki/Holland_Codes](https://en.wikipedia.org/wiki/Holland_Codes)
+- [https://en.wikipedia.org/wiki/Keirsey_Temperament_Sorter](https://en.wikipedia.org/wiki/Keirsey_Temperament_Sorter)
+- [https://en.wikipedia.org/wiki/Enneagram_of_Personality](https://en.wikipedia.org/wiki/Enneagram_of_Personality)
+- [http://personalityjunkie.com/07/myers-briggs-enneagram-mbti-types-correlations-relationship/](http://personalityjunkie.com/07/myers-briggs-enneagram-mbti-types-correlations-relationship/)
+- [http://daemonsandanalyses.tumblr.com/post/50016577026/likely-enneagram-mbti-and-form-correlations](http://daemonsandanalyses.tumblr.com/post/50016577026/likely-enneagram-mbti-and-form-correlations)
