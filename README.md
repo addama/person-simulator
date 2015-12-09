@@ -19,11 +19,12 @@ I feel it should be said that I don't have any stake in these profiling systems,
 - [Somatotype](https://en.wikipedia.org/wiki/Somatotype_and_constitutional_psychology)
 
 **Additional factors:**
-- Handedness
+- Handedness (conforming to real distribution)
 - Birthday and age
 - Western/Chinese Zodiac sign
+- Height and weight (based on somatotype)
 - BMI
-- Gender
+- Gender (50/50 for now)
 - Name (about 100 names per gender)
 
 **Assumptions to be made based on the above:**
@@ -185,3 +186,4 @@ The "why" of it is because I like simulations and randomness, and I feel that a 
 
 - Expand the above functions to make use of internal data that this person has available to them based on preference and experience (how hungry are you? Would you like Chinese food right now? Which Chinese restaurant would you like to go to?)
 
+- Cleanup! Simplification! Streamlining! 
