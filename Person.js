@@ -855,7 +855,7 @@ var Person = function(population, data) {
 	}
 	
 	// Set up the functions
-	person.toJSON = function() {
+	person.toJSON = function(isPretty) {
 		// Convert the variables and structure (not functions) to JSON
 		var result = {};
 		for (var prop in this) {
@@ -863,6 +863,7 @@ var Person = function(population, data) {
 				result[prop] = this[prop];
 			}
 		}
+		if (isPretty) return JSON.stringify(result, null, 4);
 		return JSON.stringify(result);
 	}
 	

@@ -50,6 +50,118 @@ index.htm is just a crude testing tool for Person.js, so I encourage you to play
 
 To generate more, refresh the page.
 
+# Example output
+```
+{
+    "matrix": {
+        "neuroticism": {
+            "anxiety": 32,
+            "hostility": 41,
+            "depression": 36,
+            "selfconsciousness": 30,
+            "impulsiveness": 43,
+            "stress": 99
+        },
+        "extroversion": {
+            "warmth": 9,
+            "gregariousness": 0,
+            "assertiveness": 51,
+            "activity": 13,
+            "excitementseeking": 89,
+            "positivity": 93
+        },
+        "openness": {
+            "fantasy": 66,
+            "aesthetics": 6,
+            "feelings": 89,
+            "actions": 64,
+            "ideas": 89,
+            "values": 18
+        },
+        "agreeableness": {
+            "trust": 28,
+            "straightforwardness": 54,
+            "altruism": 35,
+            "compliance": 53,
+            "modesty": 63,
+            "tendermindedness": 24
+        },
+        "conscientiousness": {
+            "competence": 42,
+            "order": 35,
+            "dutifulness": 15,
+            "striving": 37,
+            "discipline": 67,
+            "deliberation": 92
+        }
+    },
+    "gender": "female",
+    "age": 54,
+    "totals": {
+        "neuroticism": 47,
+        "extroversion": 42,
+        "openness": 55,
+        "agreeableness": 43,
+        "conscientiousness": 48
+    },
+    "ageCategory": "Middle Aged",
+    "name": "Jessica",
+    "mbti": "ISFP",
+    "holland": [
+        "realistic",
+        "artistic",
+        "social"
+    ],
+    "keirsey": [
+        "Composer",
+        "Entertainer",
+        "Artisan",
+        "Observant"
+    ],
+    "quadrant": "phlegmatic",
+    "body": {
+        "type": "endo-ecto",
+        "height": 62,
+        "weight": 140,
+        "soma": [
+            4,
+            2,
+            3
+        ],
+        "bmi": 25.60353798126951,
+        "category": "overweight",
+        "handedness": "right"
+    },
+    "enneagram": {
+        "type": "6",
+        "role": "loyalist",
+        "fixation": "cowardice",
+        "idea": "faith",
+        "fear": "being unsupported, without guidance",
+        "desire": "to be supported, guided",
+        "tempation": "indecision, doubt",
+        "vice": "fear",
+        "virtue": "courage",
+        "foe": "3",
+        "friend": "9"
+    },
+    "faith": "Spiritual",
+    "birthday": {
+        "day": 18,
+        "month": 1,
+        "year": 1961
+    },
+    "astro": {
+        "western": {
+            "sign": "capricorn"
+        },
+        "eastern": {
+            "sign": "ox"
+        }
+    }
+}
+```
+
 # But why?
 It started out as a stock market simulation, where I had an agent based system. Each agent had money and thresholds for how much they would be willing to spend, how likely they were to snatch up cheap stocks, and how varied they wanted to keep their portfolio. As I was creating this, I began thinking about all of the additional factors that I could tack on to these faceless agents to make their interactions more genuine. From there, I moved on with the goal of generating people capable of making decisions based on their own personalities, hold jobs, get hungry, have friends, and in general *live*. 
 
