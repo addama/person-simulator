@@ -45,6 +45,9 @@ var Person = function(population, data) {
 				'Sebastian', 'Sol', 'Sergio', 'Samuel', 'Scott', 'Sean', 'Simon', 'Stanley', 'Sandeep', 'Sven', 'Sanjay',
 				'Charles', 'Cody', 'Colin', 'Cameron', 'Carl', 'Oscar', 'Owen', 'Omar', 'Kevin', 'Kurt', 'Caleb', 
 				'Kent', 'Marcus', 'Martin', 'Mitch', 'Miles', 'Frank', 'Fred', 'Benjamin', 'Bob', 'Robert', 'Burt',
+				'Lucio', 'Vladimir', 'Victor', 'Karl', 'Derek', 'Dick', 'Richard', 'Roger', 'Oleg', 'Demitri', 'Dmitri',
+				'Johan', 'Johannes', 'Krishna', 'Ravi', 'Aditya', 'Vihaan', 'Jae Suk', 'Jong Kook', 'Dong Hoon', 
+				'Gae Ri', 'Francois', 'Eric',
 			],
 			female: [
 				'Chloe', 'Emily', 'Emma', 'Jennifer', 'Olivia', 'Jessica', 'Hannah', 'Lily', 'Sarah', 'Savannah', 
@@ -56,7 +59,9 @@ var Person = function(population, data) {
 				'Dakota', 'Diane', 'Danielle', 'Dawn', 'Daisy', 'Rose', 'Deborah', 'Deirdre', 'Dorothy', 'Valerie',
 				'Frankie', 'Fiona', 'Fatima', 'Felicia', 'Helen', 'Holly', 'Haley', 'Heidi', 'Harley', 'Hillary',
 				'Patty', 'Paula', 'Pamela', 'Phoebe', 'Paris', 'Crystal', 'Priya', 'Penny', 'Maria', 'Mary', 'Christina',
-				'Gertrude', 'Ruby',
+				'Gertrude', 'Ruby', 'Zarya', 'Whitney', 'Courtney', 'Rai', 'Erin', 'Kendra', 'Ekatarina', 'Yvette',
+				'Francesca', 'Erica', 'Susan', 'Suzannah', 'Ananya', 'Diya', 'Myra', 'Eve', 'Eva', 'Soo Zee', 'Ming',
+				'Ji Hyo', 'Taeyeon', 'Hyoyeon', 'Yuri', 
 				
 			],
 		},
@@ -416,7 +421,7 @@ var Person = function(population, data) {
 		if (person.mbti === 'ISFJ') scores.social += 5;
 		
 		// Enterprising
-		if (has(mbti, 'E')) scores.enterprising += 4;
+		if (has(mbti, 'E')) scores.enterprising += 5;
 		if (person.mbti === 'ENTJ') scores.enterprising += 7;
 		if (person.mbti === 'ESTJ') scores.enterprising += 7;
 		if (person.mbti === 'ESTP') scores.enterprising += 7;
@@ -502,7 +507,7 @@ var Person = function(population, data) {
 				// ISTJ: 1, 5, 6
 				var choice = ['1', '5', '6'];
 				break;
-			
+				
 			case 'ESFP': 
 				// ESFP: 2, 3, 6, 7
 				var choice = ['2', '3', '6', '7'];
@@ -555,16 +560,15 @@ var Person = function(population, data) {
 				break;
 		}
 		return enneagrams[choice[getRandomNumber(0, choice.length)]];
-
 	}
 	
 	function getAgeCategory(person) {
 		switch (true) {
-			case person.age < 6: return 'Infant'; break;
-			case person.age < 13: return 'Child'; break;
-			case person.age < 19: return 'Teenager'; break;
-			case person.age < 51: return 'Adult'; break;
-			case person.age < 71: return 'Middle Aged'; break;
+			case person.age < 6: return 'infant'; break;
+			case person.age < 13: return 'child'; break;
+			case person.age < 19: return 'teenager'; break;
+			case person.age < 51: return 'adult'; break;
+			case person.age < 71: return 'middle aged'; break;
 			default: return 'Elderly'; break;
 		}
 	}
@@ -578,21 +582,11 @@ var Person = function(population, data) {
 	function getBMICategory(bmi) {
 		var category = 'healthy';
 		switch (true) {
-			case bmi < 18.5:
-				category = 'underweight';
-				break;
-			case bmi >= 25 && bmi < 30:
-				category = 'overweight';
-				break;
-			case bmi >= 30 && bmi < 35:
-				category = 'obese';
-				break;
-			case bmi >= 35 && bmi < 40:
-				category = 'clinically obese';
-				break;
-			case bmi >= 40:
-				category = 'morbidly obese';
-				break;	
+			case bmi < 18.5:				category = 'underweight'; break;
+			case bmi >= 25 && bmi < 30:	category = 'overweight'; break;
+			case bmi >= 30 && bmi < 35:	category = 'obese'; break;
+			case bmi >= 35 && bmi < 40:	category = 'clinically obese'; break;
+			case bmi >= 40: 				category = 'morbidly obese'; break;	
 		}
 		return category;
 	}

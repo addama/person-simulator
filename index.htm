@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			.person { display: list-item; }
-		</style>
-	</head>
+	<head></head>
 	
 	<body>
-		<pre id='people'>
-			
-		</pre>
+		<pre id='people'></pre>
 		<script type='text/javascript' src='jquery-2.1.4.min.js'></script>
-		<script type='text/javascript' src='Person.js'></script>
+		<script type='text/javascript' src='Person2.js'></script>
 		<script type='text/javascript'>
-			
-			<!-- var count = 500000; -->
-			var count = 1000;
+			var population = 1000000;
 			var people = [];
-			var ages = {
-				Infant: 0, 
-				Child: 0, 
-				Teenager: 0, 
-				Adult: 0, 
-				'Middle Aged': 0, 
-				Elderly: 0,
-				Total: 0,
+			var census = {
+				gender: {},
+				handedness: {},
+				bmi: {},
+				age: {},
 			};
-			
-			var hands = {
-				'right': 0,
-				'left': 0,
-				'mixed': 0,
+			for (var i = 0; i < population; i++) {
+				var person = new Person();
+				people.push(person);
+				
+				census.gender[person.physical.gender] = census.gender[person.physical.gender] || 0;
+				census.gender[person.physical.gender] ++;
+				
+				census.handedness[person.physical.handedness] = census.handedness[person.physical.handedness] || 0;
+				census.handedness[person.physical.handedness] ++;
+				
+				census.bmi[person.physical.bmiCategory] = census.bmi[person.physical.bmiCategory] || 0;
+				census.bmi[person.physical.bmiCategory] ++;
+				
+				census.age[person.physical.ageCategory] = census.age[person.physical.ageCategory] || 0;
+				census.age[person.physical.ageCategory] ++;
 			}
-			
-			var faith = {
-				'Non-religious': 0,
-				'Spiritual': 0,
-				'Religious (non-practicing)': 0,
-				'Religious (practicing)': 0,
-				'Devout': 0,
-				'Zealous': 0,
-				'Agnostic': 0,
-				'Superstitious': 0,
-			}
-			var start = Date.now();
-			for (var i = 1; i <= count; i++) {
-				people.push(new Person(count));
-			}
-			
-			people.map(function(person, index) {
-				ages[person.ageCategory] ++;
-				ages.Total ++;
-				hands[person.body.handedness] ++;
-				faith[person.faith] ++;
-				console.log(person.name, person.age, person.gender, person);
-			});
-			var display = Date.now();
-			console.warn('Census', ages, hands, faith);
-			console.log('Time: ', (display - start)/ 1000, 's');
+			console.log(census);
+			//console.log(people);
 		</script>
 	</body>
 </html>

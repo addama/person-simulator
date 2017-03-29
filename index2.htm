@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	
+	<body>
+		<pre id='people'></pre>
+		<script type='text/javascript' src='jquery-2.1.4.min.js'></script>
+		<script type='text/javascript' src='Person.js'></script>
+		<script type='text/javascript'>
+			
+			var card = function(person) {
+				var text = '<h3>' + person.name + ' ' + person.age + ' (' + person.ageCategory + ') ' + person.gender + '</h3>';
+				text += person.body.handedness + '-handed, ' + person.body.category + ', ' + person.body.height + '" tall, ' + person.body.weight + ' lbs\r\n';
+				text += '<em>';
+				for (var cat in person.matrix) {
+					var category = person.matrix[cat];
+					text += '<strong>' + cat.substr(0,8) + ':</strong>\t';
+					for (var item in category) {
+						text += item.substring(0,8) + ': ' + category[item] + '\t';
+					}
+					text += '\r\n';
+				}
+				text += '</em>\r\n';
+				$('#people').append(text);
+			}
+			
+			
+			<!-- var count = 500000; -->
+			var count = 1000;
+			var people = [];
+			var ages = {
+				Infant: 0, 
+				Child: 0, 
+				Teenager: 0, 
+				Adult: 0, 
+				'Middle Aged': 0, 
+				Elderly: 0,
+				Total: 0,
+			};
+			
+			var hands = {
+				'right': 0,
+				'left': 0,
+				'mixed': 0,
+			}
+			
+			var faith = {
+				'Non-religious': 0,
+				'Spiritual': 0,
+				'Religious (non-practicing)': 0,
+				'Religious (practicing)': 0,
+				'Devout': 0,
+				'Zealous': 0,
+				'Agnostic': 0,
+				'Superstitious': 0,
+			}
+			var start = Date.now();
+			for (var i = 1; i <= count; i++) {
+				people.push(new Person(count));
+			}
+			
+			people.map(function(person, index) {
+				ages[person.ageCategory] ++;
+				ages.Total ++;
+				hands[person.body.handedness] ++;
+				faith[person.faith] ++;
+				card(person);
+				//console.log(person.name, person.age, person.gender, person);
+			});
+			var display = Date.now();
+			console.warn('Census', ages, hands, faith);
+			console.log('Time: ', (display - start)/ 1000, 's');
+		</script>
+	</body>
+</html>
