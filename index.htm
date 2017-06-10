@@ -4,35 +4,23 @@
 	
 	<body>
 		<pre id='people'></pre>
-		<script type='text/javascript' src='jquery-2.1.4.min.js'></script>
-		<script type='text/javascript' src='Person2.js'></script>
+		<script type='text/javascript' src='Utility.js'></script>
+		<script type='text/javascript' src='Person.js'></script>
+		<script type='text/javascript' src='Core.js'></script>
+		<script type='text/javascript' src='Body.js'></script>
 		<script type='text/javascript'>
-			var population = 1000000;
-			var people = [];
-			var census = {
-				gender: {},
-				handedness: {},
-				bmi: {},
-				age: {},
-			};
-			for (var i = 0; i < population; i++) {
-				var person = new Person();
-				people.push(person);
-				
-				census.gender[person.physical.gender] = census.gender[person.physical.gender] || 0;
-				census.gender[person.physical.gender] ++;
-				
-				census.handedness[person.physical.handedness] = census.handedness[person.physical.handedness] || 0;
-				census.handedness[person.physical.handedness] ++;
-				
-				census.bmi[person.physical.bmiCategory] = census.bmi[person.physical.bmiCategory] || 0;
-				census.bmi[person.physical.bmiCategory] ++;
-				
-				census.age[person.physical.ageCategory] = census.age[person.physical.ageCategory] || 0;
-				census.age[person.physical.ageCategory] ++;
-			}
-			console.log(census);
-			//console.log(people);
+			Utility.loadJSON('statics.json', function(result) {
+				var lists = result;
+				var population = 10;
+				for (var i = 0; i < population; i++) {
+					var person = new Person(lists);
+					console.log(person);
+						console.log(person.name, '\t\t', person.tags.join(', '), '\r\n\r\n');
+
+				}
+				var addama =  new Person(lists, 'male', 32, 'addama');
+				console.log(addama);
+			});
 		</script>
 	</body>
 </html>

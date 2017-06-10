@@ -1,0 +1,119 @@
+{
+	"temperaments": [ "melancholic", "choleric", "phlegmatic", "sanguine" ],
+	"temperamentDescriptions": {
+		"sanguine": [ "talkative", "sociable", "lively" ],
+		"choleric": [ "egocentric", "impulsive", "aggressive" ],
+		"melancholic": [ "serious", "introverted", "depressive" ],
+		"phlegmatic": [ "thoughtful", "calm", "tolerant" ]
+	},
+	"ageCategories": ["infant", "child", "teenager", "adult", "middle-aged", "elderly" ],
+	"handedness": [ "left", "right", "mixed" ],
+	"sex": [ "female", "male" ],
+	"faithCategories": [ 
+		"non-religious", "superstitious", "agnostic", "spiritual", 
+		"religious (non-practicing)", "religious (practicing)", "devout", "zealous" 
+	],
+	"musicGenres": [
+		"pop", "acoustic", "singer-songwriter", "metal", "rock", "oldies", "disco",
+		"idm", "funk", "punk", "grunge", "indie", "emo", "folk", "video-game", "kpop",
+		"jpop", "rap", "hip-hop", "r-and-b", "country", "bluegrass"
+	],
+	"bmicategories": [
+		"underweight",
+		"overweight",
+		"obese",
+		"clinically obese",
+		"morbidly obese",
+		"healthy"
+	],
+	"keirsey": {
+		"esfj": ["provider", "conservator", "guardian", "observant"],
+		"isfj": ["protector", "conservator", "guardian", "observant"],
+		"estj": ["supervisor", "administrator", "guardian", "observant"],
+		"istj": ["inspector", "administrator", "guardian", "observant"],
+		"esfp": ["performer", "entertainer", "artisan", "observant"],
+		"isfp": ["composer", "entertainer", "artisan", "observant"],
+		"estp": ["promoter", "operator", "artisan", "observant"],
+		"istp": ["crafter", "operator", "artisan", "observant"],
+		"enfp": ["champion", "advocate", "idealist", "introspective"],
+		"infp": ["healer", "advocate", "idealist", "introspective"],
+		"enfj": ["teacher", "mentor", "idealist", "introspective"],
+		"infj": ["counselor", "mentor", "idealist", "introspective"],
+		"entp": ["inventor", "engineer", "rational", "introspective"],
+		"intp": ["architect", "engineer", "rational", "introspective"],
+		"entj": ["fieldmarshal", "coordinator", "rational", "introspective"],
+		"intj": ["mastermind", "coordinator", "rational", "introspective"]
+	},
+	"names": {
+		"male": [
+			"jacob", "muhammad", "aaron", "shawn", "jonah", "daniel", "alex", "liam", "ryan", "james", "michael", 
+			"david", "ethan", "matthew", "luke", "harry", "ali", "jack", "jordan", "alexander", "tyler", "joshua",
+			"andrew", "dylan", "noah", "kevin", "adam", "joseph", "barry", "ryu", "jin", "evan", "juan", "jacque",
+			"nathan", "john", "austin", "logan", "christopher", "louis", "william", "brian", "anthony", "liu", 
+			"jason",  "max", "kyle", "justin", "jackson", "brandon", "wesley", "peter", "pablo", "pascal", "donald",
+			"patrick", "paul", "phillip", "steven", "george", "gregory", "guy", "geoffrey", "gordon", "grant", 
+			"sebastian", "sol", "sergio", "samuel", "scott", "sean", "simon", "stanley", "sandeep", "sven", "sanjay",
+			"charles", "cody", "colin", "cameron", "carl", "oscar", "owen", "omar", "kevin", "kurt", "caleb", 
+			"kent", "marcus", "martin", "mitch", "miles", "frank", "fred", "benjamin", "bob", "robert", "burt",
+			"lucio", "vladimir", "victor", "karl", "derek", "dick", "richard", "roger", "oleg", "demitri", "dmitri",
+			"johan", "johannes", "krishna", "ravi", "aditya", "vihaan", "jae suk", "jong kook", "dong hoon", 
+			"gae ri", "francois", "eric", "jimmy", "jeff", "jeffrey", "artyom", "enrique", "bryan", "nigel", "rick",
+			"emilio", "gilbert", "albert", "alberto", "franklin", "reggie", "jake", "hunter", "parker", "russ",
+			"lance"
+		],
+		"female": [
+			"chloe", "emily", "emma", "jennifer", "olivia", "jessica", "hannah", "lily", "sarah", "savannah", 
+			"isabella", "ava", "sophia", "ella", "grace", "charlotte", "elizabeth", "mia", "rebecca", "abigail", "samantha",
+			"ashley", "anna", "anne", "lauren", "megan", "nicole", "madison", "zoe", "katie", "jasmine", "amber",
+			"amy", "alyssa", "lucy", "abby", "amanda", "bella", "natalie", "rachel", "kelly", "alexis", "virginia",
+			"paige", "vanessa", "alice", "angela", "aurora", "april", "anastasia", "audrey", "betsy", "brandy", 
+			"barbara", "bridget", "brittany", "bernadette", "beverly", "bianca", "brenda", "bronwyn", "bethany", 
+			"dakota", "diane", "danielle", "dawn", "daisy", "rose", "deborah", "deirdre", "dorothy", "valerie",
+			"frankie", "fiona", "fatima", "felicia", "helen", "holly", "haley", "heidi", "harley", "hillary",
+			"patty", "paula", "pamela", "phoebe", "paris", "crystal", "priya", "penny", "maria", "mary", "christina",
+			"gertrude", "ruby", "zarya", "whitney", "courtney", "rai", "erin", "kendra", "ekatarina", "yvette",
+			"francesca", "erica", "susan", "suzannah", "ananya", "diya", "myra", "eve", "eva", "soo zee", "ming",
+			"ji hyo", "taeyeon", "hyoyeon", "yuri", "raina", "alberta", "cheryl", "miranda", "sunny", "erika", "anita",
+			"britta", "emilia", "gretta", "ginger", "rosalina", "micah", "myka", "misha", "michelle", "michaella",
+			"lynne", "stephanie", "molly"
+		]
+	},
+	"enneagrams": [
+		{	"type": "1", "role": "reformer", "fixation": "resentment", "idea": "perfection",
+			"fear": "corruptness", "desire": "integrity", "tempation": "hypocrisy",
+			"vice": "anger", "virtue": "serenity", "foe": "4", "friend": "7"
+		},
+		{	"type": "2", "role": "helper", "fixation": "flattery", "idea": "freedom",
+			"fear": "being unloved", "desire": "to feel love", "tempation": "self-depreciation",
+			"vice": "pride", "virtue": "humility", "foe": "8", "friend": "4"
+		},
+		{	"type": "3", "role": "achiever", "fixation": "vanity", "idea": "hope, law",
+			"fear": "worthlessness", "desire": "to feel valuable", "tempation": "pushing self too far",
+			"vice": "deceit", "virtue": "honesty", "foe": "9", "friend": "6"
+		},
+		{	"type": "4", "role": "individualist", "fixation": "melancholy", "idea": "origin",
+			"fear": "being insignificant", "desire": "to be unique", "tempation": "overuse of imagination",
+			"vice": "envy", "virtue": "equanimity", "foe": "2", "friend": "1"
+		},
+		{	"type": "5", "role": "investigator", "fixation": "stinginess", "idea": "omniscience",
+			"fear": "helplessness", "desire": "mastery", "tempation": "replacing experience with concepts",
+			"vice": "avarice", "virtue": "non-attachment", "foe": "7", "friend": "8"
+		},
+		{	"type": "6", "role": "loyalist", "fixation": "cowardice", "idea": "faith", 
+			"fear": "being unsupported", "desire": "to be supported", "tempation": "indecision",
+			"vice": "fear", "virtue": "courage", "foe": "3", "friend": "9"
+		},
+		{	"type": "7", "role": "enthusiast", "fixation": "planning", "idea": "wisdom, plan",
+			"fear": "being trapped", "desire": "to be content", "tempation": "thinking satisfaction is elsewhere",
+			"vice": "gluttony", "virtue": "sobriety", "foe": "1", "friend": "5"
+		},
+		{	"type": "8", "role": "challenger", "fixation": "vengeance", "idea": "truth",
+			"fear": "being controlled", "desire": "self-protection", "tempation": "over confidence",
+			"vice": "lust", "virtue": "innocence", "foe": "5", "friend": "2"
+		},
+		{	"type": "9", "role": "peacemaker", "fixation": "daydreaming", "idea": "love",
+			"fear": "loss", "desire": "wholeness", "tempation": "avoiding conflicts",
+			"vice": "sloth", "virtue": "action", "foe": "6", "friend": "3"
+		}
+	]
+}
