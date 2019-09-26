@@ -18,6 +18,20 @@
 		"emo", "metal", "rock", "oldies", "disco", "techno", "idm", "funk", "punk", 
 		"grunge", "videogame", "pop", "rap", "hiphop", "randb"
 	],
+	"foodCategories": {
+		"basic": [
+			"fastfood", "sandwich", "bagel", "icecream", "cake", "soup", "cookies", 
+			"salad", "bbq", "burgers", "hotdogs", "bakedpotato", "friedchicken", 
+			"pizza"
+		],
+		"adventurous": [
+			"sushi", "ramen", "tacos", "burritos", "loco moco", "friedrice", 
+			"spaghetti", "lasagna", "calzone"
+		],
+		"exotic": [
+			"pho", "bibimbop", "charcuterie", "dimsum" 
+		]
+	},
 	"bmicategories": [
 		"underweight",
 		"overweight",
