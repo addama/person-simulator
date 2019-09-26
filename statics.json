@@ -14,9 +14,9 @@
 		"religious (non-practicing)", "religious (practicing)", "devout", "zealous" 
 	],
 	"musicGenres": [
-		"pop", "acoustic", "singer-songwriter", "metal", "rock", "oldies", "disco",
-		"idm", "funk", "punk", "grunge", "indie", "emo", "folk", "video-game", "kpop",
-		"jpop", "rap", "hip-hop", "r-and-b", "country", "bluegrass"
+		"acoustic", "singersongwriter", "country", "bluegrass", "folk", "indie", 
+		"emo", "metal", "rock", "oldies", "disco", "techno", "idm", "funk", "punk", 
+		"grunge", "videogame", "pop", "rap", "hiphop", "randb"
 	],
 	"bmicategories": [
 		"underweight",
@@ -115,5 +115,49 @@
 			"fear": "loss", "desire": "wholeness", "tempation": "avoiding conflicts",
 			"vice": "sloth", "virtue": "action", "foe": "6", "friend": "3"
 		}
+	],
+	"matrix": {
+		"neuroticism": [ "tense", "irritable", "depressed", "shy", "moody", "vulnerable" ],
+		"extroversion": [ "outgoing", "sociable", "assertive", "energetic", "adventurous", "enthusiastic" ],
+		"openness": [ "imaginative", "artistic", "excitable", "wellrounded", "curious", "accepting" ],
+		"agreeableness": [ "forgiving", "blunt", "altruistic", "compliant", "modest", "sympathetic" ],
+		"conscientiousness": [ "efficient", "organized", "dutiful", "thorough", "disciplined", "deliberate"	]
+	},
+	"neutralMoodTags": [
+		"is-tolerant", "very-tolerant",
+		"is-calm", "very-calm",
+		"not-moody", "very-not-moody",
+		"is-disciplined", "very-disciplined",
+		"not-excitable", "very-not-excitable",
+		"is-deliberate",
+		"is-blunt", "very-blunt"
+	],
+	"negativeMoodTags": [ 
+		"is-egocentric", 
+		"is-tense", "very-tense", 
+		"is-vulnerable", "very-vulnerable", 
+		"is-depressed", "very-depressed", 
+		"not-forgiving", "very-not-forgiving",
+		"is-sympathetic", 
+		"is-impulsive", 
+		"is-moody", "very-moody", 
+		"is-irritable", "very-irritable",
+		"not-enthusiastic", "very-not-enthusiastic",
+		"not-altruistic", "very-not-altruistic",
+		"is-aggressive", "very-aggressive",
+		"not-accepting", "very-not-accepting"
+	],
+	"positiveMoodTags": [ 
+		"is-enthusiastic", "very-enthusiastic", 
+		"is-accepting", "very-accepting", 
+		"is-excitable", "very-excitable", 
+		"is-sympathetic",  
+		"is-impulsive", 
+		"is-altruistic", 
+		"not-irritable", "very-not-irritable",
+		"is-forgiving", "very-forgiving",
+		"not-tense", "very-not-tense",
+		"not-depressed", "very-not-depressed",
+		"not-vulnerable", "very-not-vulnerable"
 	]
 }

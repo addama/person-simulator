@@ -28,66 +28,38 @@ var Core = function(lists) {
 			var totals = {};
 			var averages = {};
 			var total = 0;
-			var matrix = {
-				neuroticism: {
-					tense:	 		Utility.random(0, 100), //anxiety
-					irritable: 		Utility.random(0, 100), //hostility
-					depressed: 		Utility.random(0, 100), //depression
-					shy: 			Utility.random(0, 100), //selfconscious
-					moody: 			Utility.random(0, 100), //impulsiveness
-					vulnerable: 		Utility.random(0, 100), //stress
-				},
-				extroversion: {
-					outgoing: 		Utility.random(0, 100), //warmth
-					sociable: 		Utility.random(0, 100), //gregariousness
-					assertive: 		Utility.random(0, 100), //assertiveness
-					energetic: 		Utility.random(0, 100), //activeness
-					adventurous: 	Utility.random(0, 100), //excitementseeking
-					enthusiastic: 	Utility.random(0, 100), //positivity
-				},
-				openness: {
-					imaginative: 	Utility.random(0, 100), //fantasyOpen
-					artistic: 		Utility.random(0, 100), //aestheticsOpen
-					excitable: 		Utility.random(0, 100), //feelingsOpen
-					wellrounded: 	Utility.random(0, 100), //actionsOpen
-					curious: 		Utility.random(0, 100), //ideasOpen
-					accepting: 		Utility.random(0, 100), //valuesOpen
-				},
-				agreeableness: {
-					forgiving: 		Utility.random(0, 100), //trust
-					blunt: 			Utility.random(0, 100), //straightforwardness
-					altruistic: 		Utility.random(0, 100), //altruism
-					compliant: 		Utility.random(0, 100), //compliance
-					modest: 			Utility.random(0, 100), //modesty
-					sympathetic: 	Utility.random(0, 100), //tendermindedness
-				},
-				conscientiousness: {
-					efficient: 		Utility.random(0, 100), //competence
-					organized: 		Utility.random(0, 100), //order
-					dutiful: 		Utility.random(0, 100), //dutifulness
-					thorough: 		Utility.random(0, 100), //striving
-					disciplined: 	Utility.random(0, 100), //discipline
-					deliberate: 		Utility.random(0, 100), //deliberation
-				},
+			var matrix = {};
+			var max = 100 * 6 * 5;
+			
+			for (var group in lists.matrix) {
+				matrix[group] = {};
+				totals[group] = 0;
+				for (var key in lists.matrix[group]) {
+					var trait = lists.matrix[group][key];
+					var value = Utility.random(0, 100);
+					matrix[group][trait] = value;
+					totals[group] += value;
+				}
+				total += totals[group];
 			}
 			
 			for (var trait in matrix) {
-				totals[trait] = 0;
 				averages[trait] = 0;
 				for (var facet in matrix[trait]) {
-					totals[trait] += matrix[trait][facet];
-					total += matrix[trait][facet];
 					averages[trait] += matrix[trait][facet];
 				}
 				averages[trait] = Math.floor(averages[trait] / 6);
 			}
+			
 			return {
 				matrix: matrix,
 				stats: {
 					total: total,
-					max: 100 * 6 * 5,
+					max: max,
 					totals: totals,
 					averages: averages,
+					percent: Math.floor(total/max * 100),
+					deviation: Math.floor(50 - (total/max * 100))
 				}
 			};
 		},
@@ -156,7 +128,7 @@ var Core = function(lists) {
 			sorted.sort(function(a, b) { return b[1] - a[1] });
 			holland = [sorted[0][0], sorted[1][0], sorted[2][0]];
 
-			return holland
+			return holland;
 		},
 
 		keirsey: function(mbti) {

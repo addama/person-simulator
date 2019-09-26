@@ -243,6 +243,19 @@ var Body = function(lists, core, gender, age, name) {
 				if (abs[key]) result.push(key);
 			}
 			return result;
+		},
+	
+		sexuality: function() {
+			var sexuality = 'straight';
+			var random = Utility.random(0, 100);
+			if (random < 5) {
+				if (random == 0) sexuality = 'trans'; 
+				if (random == 1) sexuality = 'gay'; 
+				if (random == 2) sexuality = 'gay'; 
+				if (random == 3) sexuality = 'bisexual'; 
+				if (random == 4) sexuality = 'bisexual'; 
+			}
+			return sexuality;
 		}
 	}
 	
@@ -252,6 +265,7 @@ var Body = function(lists, core, gender, age, name) {
 	body.name = name || facets.name(body.gender);
 	body.physical = facets.physical(core.mbti, body.age.years, body.gender);
 	body.physical.birthDefects = facets.birthDefects();
+	body.sexuality = facets.sexuality();
 	
 	body.toString = function() {
 		var string = [
@@ -259,6 +273,7 @@ var Body = function(lists, core, gender, age, name) {
 			this.gender,
 			this.physical.bmiCategory,
 			this.age.category + '('+this.age.years+')',
+			this.sexuality
 		];
 		return string.join(', ') + '\r\n' + body.core.toString();
 	}
